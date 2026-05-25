@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Labeled Fractured Objects</title>
+<link rel="stylesheet" type="text/css" href="graphics.css">
+<link rel="shortcut icon" href="content/CG-ico.ico">
+
+<style>
+ .grid-container {
+      display: grid;
+
+      /* Responsive columns */
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+      min-height: 120px;
+    }
+	
+	img.thumb {
+   max-width: 200px; 
+    width: 200px; 
+    margin: 10px; 
+	padding: 0px;
+	border: 1.5px;
+	border-style:solid;
+	float: left; 
+	border-color: #000;
+	position:relative;
+}
+  </style>
+
+</head>
+<body>
+
+<div id="container" > 
+
+
+<div id="header">
+    <div id="logo">
+	    <img src="content/CG-shadow.png" alt="CG logo" width="100" />
+    </div>
+    
+    <div id="banner"> <h1>Computer Graphics Group</h1>  
+   	  <div id="department" > <p>Department of Informatics</p><p>Athens University of Economics and Business</p> </div>
+    </div>
+    	
+    
+    <div id="aueb"> 
+        <a href="http://www.aueb.gr" target="new"><img src="content/AUEB-T.png" alt="AUEB logo" height="100" /></a>
+    </div>
+</div>
+
+<div id="publications">
+<h1>Labeled Fractured Objects Repository</h1>
+</div>
+
+This site provides an extensible collection of digitized fractured objects, accompanied by grey-scale label mask textures that store a confidence value for the underlying part of the geometry belonging to a fractured surface. 
+
+<h3>Format</h3>
+
+<h3>Why Label Textures?</h3>
+
+<h3>How to Cite the Repository</h3>
+
+<h3>Extending the Repository</h3>
+
+  <div class="grid-container">
+    
+	<div class="card"><a href="http://graphics.cs.aueb.gr/graphics/downloads/fracturedobjects/Vessel.zip"><h3>Small vessel replica</h3></a>
+	<a href="http://graphics.cs.aueb.gr/graphics/downloads/fracturedobjects/Vessel.zip"><img class="thumb" src="thumbnails/vessel.jpg" alt="Small vessel" /></a>
+	<p>A 10-piece dataset of a broken vessel replica digitized by Ploutarchos Iliadis, as part of his MSc thesis in Digital Methods for the Humanities, AUEB (2025).</p> 
+	</div>
+	
+	<div class="card"><a href="http://graphics.cs.aueb.gr/graphics/downloads/fracturedobjects/Cone.zip"><h3>Conical clay pot</h3></a>
+	<a href="http://graphics.cs.aueb.gr/graphics/downloads/fracturedobjects/Cone.zip"><img class="thumb" src="thumbnails/cone.jpg" alt="Conical vessel" /></a>
+	<p>An 6-piece dataset of a (incomplete) broken conical clay pot (2015). </p> 
+	</div>
+    
+	<div class="card"><a href="http://graphics.cs.aueb.gr/graphics/downloads/fracturedobjects/DoraBlock.zip"><h3>Masonry block</h3></a>
+	<a href="http://graphics.cs.aueb.gr/graphics/downloads/fracturedobjects/DoraBlock.zip"><img class="thumb" src="thumbnails/dorablock.jpg" alt="Masonry block" /></a>
+	<p>A 3-piece dataset of an incomplete broken soapstone block from the Nidaros Cathedral in Trondheim, Norway (2014). </p> 
+	</div>
+	
+  </div>
+
+
+<div id="footer"> 
+  <p class="right">Contact info: Georgios Papaioannou, gepap @ aueb gr | Andreas Vasilakis, abasilak @ aueb gr</p> 
+ </div>
+
+</div>
+
+</body>
+</html>
