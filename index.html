@@ -64,15 +64,27 @@
 <h1>Labeled Fractured Objects Repository</h1>
 </div>
 
-This site provides an extensible collection of digitized fractured objects, accompanied by grey-scale label mask textures that store a confidence value for the underlying part of the geometry belonging to a fractured surface. 
+<p>This site provides an extensible collection of digitized fractured objects, accompanied by grey-scale label mask textures that store a confidence value for the underlying part of the geometry belonging to a fractured surface. </p>
 
 <h3>Format</h3>
+<p>The fragments in the repository are grouped by the object they belong to in zip files. The pieces are assembled (either automatically or manually) so that their pose can be used by tools that attempt to automate the labeling process. The fragment files are provided in binary GLtf format (.glb) with the base color embedded. Labeling is given separately as a png texture. For each FRAGMENT.glb file, a corresponding FRAGMENT_fracture.png bitmap is provided, with grey scale values indicating the confidence that the underlying geometry is fractured. The label masks of all fragments in a dataset have the same resolution, but could be different. By default, the confidence weights are greyscale values stored as RGB data in the PNG files. However, we assume that the information is only carried in the red channel, freeing G and B for additional information in future versions.</p>
 
-<h3>Why Label Textures?</h3>
+<h3>Why Use Textures?</h3>
+<p>Labeling is provided as a texture to decouple mesh resolution from label data and allow researchers to paint their own confidence weights. The initial label data in the repository were produced with a custom tool that assigned weights according to the proximity of a fragment's position to another fragment in the (assembled) dataset, followed by manual editing in Adobe Substance Painter. 
+</p>
 
 <h3>How to Cite the Repository</h3>
+<pre>
+@URL {LabeledFragcturedObjectsRepository,
+    author   = "Georgios Papaioannou",
+    year     = "2026",
+    month    = "may",
+    crossref = "https://cgaueb.github.io/fracturedobjects/"
+}
+</pre>
 
 <h3>Extending the Repository</h3>
+<p>Feel free to extend the repository by forking it and our team will eventually merge the respective pull request to unify the repository. Please note that the GitHub repository only hosts thumbnails and links to <strong>external</strong> 3D models. Please also note that all 3D models must be in the glb format, with or without base color textures. Make sure that fracture labeling is correct and upload the correctly named PNG label texture along with your 3D model in the provided zip file in your own repository or web site. Finally, prepare a representative image for your dataset, adhering to the theme of the already provided thumbnails in terms of the solid background (#7f7f7f)</p>
 
   <div class="grid-container">
     
